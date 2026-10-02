@@ -49,8 +49,8 @@
             <label for="COS20011">COS20011</label>
         </p>
         <p>
-            <label for="yourtutor">Please Select</label>    
-            <select name="yourtutor" id="yourtutor">
+            <label for="yourtutor">Your Tutor</label>    
+            <select name="yourtutor" id="yourtutor" required="required">
                 <option value="">Please Select</option>
                 <option value="Thomas">Thomas</option>
                 <option value="Harry">Harry</option>
@@ -84,11 +84,11 @@
         <legend>Preferred Date/Time</legend>
        <p>
            <label for="date">Date</label>
-            <input type="date" id="date" required="required"> 
+            <input type="text" id="date" placeholder="dd/mm/yyyy" pattern="^\d{2}/\d{2}/\d{4}$" required="required">
        </p>
         <p>
             <label for="time">Time</label>
-            <input type="time" id="time" required="required">
+            <input type="text" id="time" placeholder="00:00" pattern="^([01]?[0-9]|2[0-3]):[0-5][0-9]$" required="required">
         </p>
     </fieldset>
 	
